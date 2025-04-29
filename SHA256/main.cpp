@@ -35,6 +35,17 @@ int main(int argc, char* argv[]) {
 		return 0;
 	}
 
+	if (argc == 2) {
+		std::string input = argv[1];
+		std::string output;
+
+		sha::sha256(input, output);
+		
+		std::cout << output << std::endl;
+
+		return 0;
+	}
+
 	// Prepare input
 	if (argc != 3) {
 		std::cerr << "Invalid number of arguments!\n"
