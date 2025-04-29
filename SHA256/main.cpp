@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 
+// Checks if a string is blank or not
 bool isBlank(std::string input) {
 	bool result = true;
 
